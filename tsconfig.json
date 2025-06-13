@@ -6,11 +6,15 @@
     "jsx": "react",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
     "lib": [
       "es2021",
       "dom"
     ],
     "resolveJsonModule": true
   },
-  "include": ["./src/index.d.ts"]
+  "include": ["src/**/*"]
 }
