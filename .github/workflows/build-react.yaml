@@ -7,6 +7,7 @@ jobs:
       contents: write
     steps:
     - uses: actions/checkout@v4
+    - run: sed -i '/^dist\/index\.js$/d' .gitignore
     - uses: actions/setup-node@v4
       with:
         node-version: latest
